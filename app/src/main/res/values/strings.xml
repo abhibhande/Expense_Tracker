@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Expence Tracker</string>
+    <string name="selector">Select Category</string>
+
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_category">
+
+    <LinearLayout
+        android:id="@+id/rectangle_1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_1"
+
+        android:orientation="vertical"
+        >
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/menu"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/menu__icon"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_weight="1"-->
+
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/welcome_abh"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="3"-->
+
+<!--            android:layout_gravity="center"-->
+
+<!--            android:text="Welcome Abhi"-->
+<!--            android:textAppearance="@style/welcome"-->
+<!--            android:gravity="center_horizontal"-->
+
+<!--            />-->
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="10dp"
+            android:text="Welcome"
+            android:textAppearance="@style/welcome"
+            android:gravity="center_horizontal"
+
+            />
+        <TextView
+            android:id="@+id/welcome_abh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abhi"
+            android:textSize="25dp"
+            android:layout_marginStart="10dp"
+            android:textAppearance="@style/welcome"
+            android:gravity="center_horizontal"
+
+            />
+        <!--
+        android:textColor="#000000"
+         android:textAppearance="@style/welcome"-->
+
+<!--        <ImageButton-->
+
+<!--            android:id="@+id/notification"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/bell_"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_margin="10dp"-->
+<!--            />-->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/spending"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/add_new_exp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Add New Category"
+            android:textAppearance="@style/add_new_exp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/spending"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/cat"
+            android:layout_width="139dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="28dp"
+            android:layout_weight="1"
+            android:text="Category"
+            android:textAppearance="@style/date"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/category"
+            android:inputType="text"
+            android:layout_width="152dp"
+            android:layout_height="46dp"
+            android:layout_marginRight="28dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_8"
+            />
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/Add"
+            android:layout_width="131dp"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:text="ADD"
+            android:backgroundTint="#D6D1D1"
+            android:textAppearance="@style/add"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll1"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/spending"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/table1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TableLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

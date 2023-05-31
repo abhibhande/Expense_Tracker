@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_page"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/rectangle_1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="start"
+        android:background="@drawable/rectangle_1"
+
+        android:orientation="vertical"
+        >
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/menu"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/menu__icon"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_weight="1"-->
+
+<!--            />-->
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="10dp"
+            android:text="Welcome"
+            android:textAppearance="@style/welcome"
+            android:gravity="center_horizontal"
+
+            />
+        <TextView
+            android:id="@+id/welcome_abh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abhi"
+            android:textSize="25dp"
+            android:layout_marginStart="10dp"
+            android:textAppearance="@style/welcome"
+            android:gravity="center_horizontal"
+
+            />
+        <!--
+        android:textColor="#000000"
+         android:textAppearance="@style/welcome"-->
+
+<!--        <ImageButton-->
+
+<!--            android:id="@+id/notification"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/bell_"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_margin="10dp"-->
+<!--            />-->
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_weight="1"
+        >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/spending"
+            android:orientation="vertical"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+
+                android:layout_marginTop="25dp"
+                android:text="Today's Spending"
+                android:textAppearance="@style/date"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/todays_spending"
+                android:layout_width="152dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAppearance="@style/money"
+                android:text="1000"
+                android:background="@drawable/today"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/spending"
+            android:orientation="vertical"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+
+                android:layout_marginTop="25dp"
+                android:text="This Month Spending"
+                android:textAppearance="@style/date"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/month_spending"
+                android:layout_width="152dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAppearance="@style/money"
+                android:text="10000"
+                android:background="@drawable/today"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/spending"
+            android:orientation="vertical"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+
+                android:layout_marginTop="25dp"
+                android:text="Previous Month Spending"
+                android:textAppearance="@style/date"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/pre_month"
+                android:layout_width="152dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAppearance="@style/money"
+                android:text="1000"
+                android:background="@drawable/today"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/spending"
+            android:orientation="vertical"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+
+                android:layout_marginTop="25dp"
+                android:text="6 Month Spending"
+                android:textAppearance="@style/date"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/six_month"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/today"
+                android:gravity="center"
+                android:text="1000"
+                android:textAppearance="@style/money" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+ </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:gravity="center|bottom"
+        android:background="@drawable/rectangle_1"
+        android:paddingBottom="10dp"
+
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/home"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+
+            />
+
+        <ImageButton
+            android:id="@+id/new_Entry"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/add_icon"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+
+            />
+        <!--
+        android:textColor="#000000"
+         android:textAppearance="@style/welcome"-->
+
+        <ImageButton
+
+            android:id="@+id/archive_book"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/book_icon"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
